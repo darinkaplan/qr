@@ -51,7 +51,7 @@ def find_qr(file_path, debug=False):
     return results
 
 
-def main():
+if __name__ == '__main__':
     final = []
     for imagePath in glob.glob("images/*.*"):
         print(f"Analyzing file: {imagePath}")
@@ -59,4 +59,3 @@ def main():
     print(f"{len(final)} QR codes identified")
     print(final)
 
-# main()
